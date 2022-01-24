@@ -1,14 +1,18 @@
 #include<iostream>
 #include<vector>
 #include<algorithm>
+#include <climits>
 
 using std::cout;
 using std::vector;
 using std::sort;
+
+
 int threeSumClosest(vector<int>& nums, int target) {
     sort(nums.begin(),nums.end());
     int len = nums.size();
     int diff = INT_MAX;
+
     for(int i=0;i<len && diff;i++)
     {
         int lo = i+1;
